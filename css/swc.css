@@ -1,0 +1,59 @@
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#0f0f0f;
+  display:none;
+}  
+
+
+
+#boxes .window {
+  position:absolute;
+  left:auto;
+  top:auto;
+  width:440px;
+  height:850px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 0px;
+  text-align: center;
+}
+
+#pop-up {
+  top -400px;
+  animation: drop 0.5s ease forwards;
+}
+
+@keyframes drop {
+  0%{opacity:0 }
+  70%{ transform: translateY(40px); }
+  100%{ transform: translateY(30px); opacity:1; }
+}
+#boxes #dialog {
+  top:-300px;
+  animation: drop 0.5s ease forwards;
+  max-width:auto, width:50%; 
+  height:auto;
+  padding: 10px 10px 10px 10px;
+  background-color:C0;
+  font-size: 15pt;
+}
+
+.agree:hover{
+  background-color:C0;
+}
+.popupoption:hover{
+  background-color:C0;
+  color: green;
+}
+.popupoption2:hover{
+  color: red;
+}
